@@ -52,8 +52,8 @@ for username,to_addr in recieverInfo:
     #body["Content-Disposition"] = 'attachment; filename="uestc.html"'
     msg.attach(body)
 
-    msg['From'] = _format_addr('发送<%s>'%from_addr)
-    msg['To'] = _format_addr('接收<%s>'%to_addr)
+    msg['From'] = _format_addr('青海湖<%s>'%from_addr)
+    msg['To'] = _format_addr('%s<%s>'%(username,to_addr))
     msg['subject'] = Header('欢迎加入电子科技大学深圳校友会（批量发送测试邮件，不用回复！）', 'utf-8')
 
     try:
